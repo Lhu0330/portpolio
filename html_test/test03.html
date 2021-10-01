@@ -113,6 +113,33 @@
         
 <!--        본문    -->
         <style>
+            .na {
+                width: 500px;
+                height: 300px;
+                position: relative;
+            }
+            .na::before {
+                content: "";
+                height: 100;
+                width: 100;
+                background: url(asdf.jpg);
+                background-size: cover;
+                opacity: 0.3;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+            }
+            .na > a {
+                text-align: center;
+                line-height: 300px;
+                position: fixed;
+                font-size: 100px;
+            }
+            a:hover{
+                color:black;
+            }
             #main_section > article.main_article {
                 margin-bottom: 10px;
                 padding: 20px;
@@ -189,27 +216,30 @@
         <style>
             #main_footer {
 /*                중앙정렬*/
-                width: 960px; margin: 0 auto;
-                margin-bottom: 10px;
+                width: 200%; margin: 0 auto;
+                margin-bottom: 10%;
                 
 /*                테두리*/
                 box-sizing: border-box;
-                padding: 10px;
+                padding: 10% 0;
                 border: 1px solid black;
                 
 /*                글자정렬*/
                 text-align: center;
+                position: relative;
+                left: 0;
+                bottom: 0;
             }
         </style>
     </head>
     
-    <body>
+    <body class="na">
         <header id="main_header">
             <div id="title">
                 <h1>Rint Development</h1>
                 <h2 style="z-index=1;">HTML5 + CSS3 Basic</h2>
             </div>
-            <nav id="main_gnb">
+            <nav id="main_gnb" style="z-index=1;">
                 <ul>
                     <li><a href="#">web</a></li>
                     <li><a href="#">mobile</a></li>
@@ -218,7 +248,7 @@
                     <li><a href="#">Data</a></li>
                 </ul>
             </nav>
-            <nav id="main_inb">
+                        <nav id="main_inb" style="z-index=1;">
                 <ul>
                     <li><a href="#">HTML5</a></li>
                     <li><a href="#">CSS3</a></li>
@@ -228,105 +258,16 @@
                 </ul>
             </nav>
         </header>
-        <div id="content">
-            <section id="main_section">
-                <article class="main_article">
-                    <h1>Main Article</h1>
-                    <p>Lorem ipsum dolor sit ame, consectuetur adipiscing elit</p>
-                </article>
-                <article class="main_article">
-                    <h1>Main Article</h1>
-                    <p>Lorem ipsum dolor sit ame, consectuetur adipiscing elit</p>          
-                </article>
-                <article class="main_article">
-                     <h1>Main Article</h1>
-                    <p>Lorem ipsum dolor sit ame, consectuetur adipiscing elit</p>          
-                </article>        
+        <div id="content" style="z-index=1;" >
+            <section id="main_section" style="z-index=1;">
             </section>
-            <aside id="main_aside">
-                <input id="first" type="radio" name="tab" checked="checked" />
-                <input id="second" type="radio" name="tab" />
-                <section class="buttons">
-                    <label for="first">first</label>
-                    <label for="second">second</label>
-                </section>
-                <div class="tab_item">
-                    <ul>
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />
-                            </div>    
-                            <div class="decription">
-                                <strong>HTML5 Canvas</strong><P>2012-03-15</P>
-                            </div>
-                        </a></li>
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />       
-                            </div>
-                            <div class="description">
-                                <strong>HTML5 Audio</strong><p>2012-03-15</p>
-                            </div>  
-                        </a></li>
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />       
-                            </div>
-                            <div class="description">
-                                <strong>HTML5 Video</strong><p>2012-03-15</p>
-                            </div>  
-                        </a></li>
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />       
-                            </div>
-                            <div class="description">
-                                <strong>HTML5 Semantic web</strong><p>2012-03-15</p>
-                            </div>  
-                        </a></li>                    
-                    </ul>
-                </div>
-                <div class="tab_item">
-                    <ul>
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />
-                            </div>
-                            <div class="description">
-                                <strong>CSS3 Transtition</strong><p>2012-03-15</p>
-                            </div>
-                        </a></li>
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />
-                            </div>
-                            <div class="description">
-                                <strong>CSS3 Animation</strong><p>2012-03-15</p>
-                            </div>
-                        </a></li>       
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />
-                            </div>
-                            <div class="description">
-                                <strong>CSS3 border</strong><p>2012-03-15</p>
-                            </div>
-                        </a></li>
-                        <li class="item"><a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45" />
-                            </div>
-                            <div class="description">
-                                <strong>CSS3 box</strong><p>2012-03-15</p>
-                            </div>
-                        </a></li>                        
-                    </ul>
-                </div>
-            </aside>
         </div>
+        &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+        <a href="ex05_1.html">&nbsp;&nbsp;누르면 다음페이지로 <br> 이동합니다.</a>
+        &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
         <footer id="main_footer">
-            <h3>HTML5+ CSS3 Basic</h3>
-            <address>Website Layout Basic</address>
+            <h3 style="z-index=1;">HTML5+ CSS3 Basic</h3>
+            <address style="z-index=1;">Website Layout Basic</address>
         </footer>
     </body>
     
